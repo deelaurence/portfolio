@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="3d.css" />
+  </head>
+  <body>
+    <div class="scene">
+      <div class="carousels">
+        <div class="carousel-cell">1</div>
+        <div class="carousel-cell">2</div>
+        <div class="carousel-cell">3</div>
+        <div class="carousel-cell">4</div>
+        <div class="carousel-cell">5</div>
+        <!-- <div class="carousel-cell">6</div>
+        <div class="carousel-cell">7</div>
+        <div class="carousel-cell">8</div>
+        <div class="carousel-cell">9</div> -->
+      </div>
+    </div>
+    <button class="next">next</button>
+    <button class="prev">prev</button>
+    <script>
+      let carousels = document.querySelector(".carousels");
+      let nextBtn = document.querySelector(".next");
+      let prevBtn = document.querySelector(".prev");
+      let angle = 0;
+      let nextHandler = () => {
+        angle += 72;
+        carousels.style.transform = `translateZ(-289px)  rotateY(${angle}deg)`;
+        console.log(angle);
+      };
+
+      let prevHandler = () => {
+        angle -= 72;
+        carousels.style.transform = `translateZ(-289px)  rotateY(${angle}deg)`;
+        console.log(angle);
+      };
+      nextBtn.addEventListener("click", nextHandler);
+      prevBtn.addEventListener("click", prevHandler);
+    </script>
+  </body>
+</html>
