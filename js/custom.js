@@ -1,4 +1,7 @@
+document.getElementById("vid0").play()
+document.getElementById("vid1").play()
 const timeDOM = document.querySelector(".clock")
+
 
 const formatTime =()=>{
 const currentTime = new Date()
@@ -27,3 +30,11 @@ setInterval(() => {
     
     formatTime()
 }, 1000);
+
+const isFirefox = navigator.userAgent.includes("Firefox")
+console.log(isFirefox)
+const grain = document.querySelectorAll(".svg")
+const svg = document.querySelector("svg")
+grain.forEach((singleGrain)=>{
+    !isFirefox?singleGrain.style.display="block":singleGrain.style.display="none"
+})
