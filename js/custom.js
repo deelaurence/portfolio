@@ -1,6 +1,41 @@
 document.getElementById("vid0").play()
 document.getElementById("vid1").play()
 const timeDOM = document.querySelector(".clock")
+const intro = document.querySelector(".intro-nav")
+const about = document.querySelector(".about-nav")
+const how = document.querySelector(".how-nav")
+const projects = document.querySelector(".projects-nav")
+const contact = document.querySelector(".contact-nav")
+//\\**********************************************************//\\
+//**********************************************************//\\
+const introduction = document.querySelector(".alo-container")
+const introduction2 = document.querySelector(".introduction")
+const workProcess = document.querySelector(".services")
+const spatzekCont = document.querySelector(".spatzek-ads-cont")
+
+
+const html = document.documentElement;
+
+intro.addEventListener('click',scr)
+function scr() {
+ introduction.scrollIntoView()
+ console.log('hi')
+} 
+about.addEventListener('click',scr2)
+function scr2() {
+ introduction2.scrollIntoView()
+ console.log('hi 2')
+} 
+how.addEventListener('click',scr3)
+function scr3() {
+ workProcess.scrollIntoView()
+ console.log('hi 2')
+} 
+projects.addEventListener('click',scr4)
+function scr4() {
+ spatzekCont.scrollIntoView()
+ console.log('hi 2')
+} 
 
 
 const formatTime =()=>{
