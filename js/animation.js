@@ -1,4 +1,80 @@
 gsap.registerPlugin(ScrollTrigger);
+let typing = gsap.timeline();
+typing.from(".type1",{
+width:0,
+borderRight:"0" ,
+duration:1,    
+// borderRight:'4px solid green',    
+ease:"steps(36)"
+})
+typing.to(".type1",{
+duration:.1,
+borderRight:"0"    
+})
+typing.from(".type2",{
+borderRight:"0" ,
+width:0,
+duration:2,
+ease:"steps(36)"
+})
+typing.to(".type2",{
+  duration:.1,
+  borderRight:"0"    
+})
+typing.from(".type3",{
+width:0,
+borderRight:"0" ,
+duration:2,    
+ease:"steps(36)"
+})
+typing.to(".type3",{
+  duration:.1,
+  borderRight:"0"    
+})
+
+typing.from(".type4",{
+width:0,
+borderRight:"0" ,
+duration:1,    
+ease:"steps(36)"
+})
+typing.to(".type4",{
+  duration:.1,
+  borderRight:"0"    
+})
+
+typing.from(".type5",{
+width:0,
+borderRight:"0" ,
+duration:4,    
+ease:"steps(36)"
+})
+typing.to(".type5",{
+  duration:.1,
+  borderRight:"0"    
+})
+
+typing.from(".type6",{
+width:0,
+borderRight:"0" ,
+duration:2,    
+ease:"steps(36)"
+})
+typing.to(".type6",{
+  duration:.1,
+  borderRight:"0"    
+})
+
+typing.from(".type7",{
+width:0,
+borderRight:"0" ,
+duration:3,    
+ease:"steps(36)"
+})
+typing.to(".type7",{
+  duration:.1,
+  borderRight:"0"    
+})
 
 let bigPTL = gsap.timeline({
   scrollTrigger: {
