@@ -3,6 +3,9 @@
   /* border: solid 1px white; */
 }
 
+
+
+
 .odunayo>span {
   padding: 0;
   display: inline-block;
@@ -93,7 +96,7 @@ html {
 }
 
 * {
-  font-family: neue;
+  /* font-family: neue; */
   /* font-variation-settings: "wdth" 200; */
   /* font-stretch: 200%; */
   font-size: 400;
@@ -353,11 +356,11 @@ nav {
   /* border-bottom: 1px solid white; */
 }
 
-.ideal-web:hover {
+/* .ideal-web:hover {
   color: orange;
   text-decoration: underline;
   cursor: pointer;
-}
+} */
 
 .spatzek-p {
   /* font-family: "Bebas neue" !important; */
@@ -389,10 +392,11 @@ nav {
   font-weight: 300;
   /* border-bottom: 2px solid orange; */
   /* border-radius: 50%; */
-  font-size: 1rem;
-  text-decoration: underline;
+  font-size: .7rem;
+  /* text-decoration: underline; */
   /* color: orange; */
-  margin-right: 10px;
+  margin-left: 10px;
+  margin-right: 4px;
 }
 
 .marquee {
@@ -762,4 +766,9 @@ body,
 .inactive {
   background: white;
   color: #252734;
+}
+
+.typing {
+  font-family: monospace !important;
+  /* color: yellow; */
 }

@@ -14,8 +14,8 @@ borderRight:"0"
 typing.from(".type2",{
 borderRight:"0" ,
 width:0,
-duration:2,
-ease:"steps(36)"
+duration:.5,
+ease:"steps(60)"
 })
 typing.to(".type2",{
   duration:.1,
@@ -68,14 +68,39 @@ typing.to(".type6",{
 typing.from(".type7",{
 width:0,
 borderRight:"0" ,
-duration:3,    
+duration:5,    
 ease:"steps(36)"
 })
 typing.to(".type7",{
   duration:.1,
   borderRight:"0"    
 })
+typing.from(".dave",{
+  opacity:0,
+  duration:2,  
+})
+typing.from(".scroll-slowly",{
+  opacity:0  
+})
+typing.from(".issue",{
+  opacity:0  
+})
+typing.from(".scroll-arrow",{
+  display:'none'
+})
+typing.from(".mandarin",{
+  opacity:0  
+})
+typing.from(".barcode",{
+  opacity:0  
+})
 
+typing.from(".npm",{
+  opacity:0  
+})
+typing.from(".scroll-nav",{
+  opacity:0  
+})
 let bigPTL = gsap.timeline({
   scrollTrigger: {
     trigger: ".big-p",
