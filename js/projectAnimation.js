@@ -13,7 +13,7 @@ ScrollTrigger.create({
     animation:tl,
     trigger:'.project-card1',
     start:'top 40%',
-    end:'+=420',
+    end:'+=425',
     scrub:3,
     pin:true,
     pinSpacing:false
