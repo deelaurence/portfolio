@@ -952,8 +952,8 @@ video {
   margin-bottom: 3rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .block {
@@ -1194,10 +1194,6 @@ video {
 
 .w-\[90\%\] {
   width: 90%;
-}
-
-.w-\[80\%\] {
-  width: 80%;
 }
 
 .min-w-\[33rem\] {
