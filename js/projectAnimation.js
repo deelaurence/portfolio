@@ -12,9 +12,10 @@ tl
 ScrollTrigger.create({
     animation:tl,
     trigger:'.project-card1',
-    start:'top 40%',
+    start:'top 30%',
     end:'+=425',
     scrub:3,
+    anticipatePin:1,
     pin:true,
     pinSpacing:false
 })

@@ -1180,16 +1180,12 @@ video {
   width: 2rem;
 }
 
-.w-\[400px\] {
-  width: 400px;
+.w-\[500px\] {
+  width: 500px;
 }
 
 .w-\[610px\] {
   width: 610px;
-}
-
-.w-\[500px\] {
-  width: 500px;
 }
 
 .w-\[710px\] {
@@ -1797,9 +1793,9 @@ video {
   font-size: 6rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .text-\[20px\] {
