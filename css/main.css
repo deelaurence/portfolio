@@ -1192,10 +1192,6 @@ video {
   width: 700px;
 }
 
-.w-\[400px\] {
-  width: 400px;
-}
-
 .min-w-\[33rem\] {
   min-width: 33rem;
 }
@@ -1802,8 +1798,9 @@ video {
   line-height: 1;
 }
 
-.text-\[16px\] {
-  font-size: 16px;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-\[20px\] {
@@ -1963,6 +1960,11 @@ video {
 .text-red-200 {
   --tw-text-opacity: 1;
   color: rgb(254 202 202 / var(--tw-text-opacity));
+}
+
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .decoration-blockquoteMid {
