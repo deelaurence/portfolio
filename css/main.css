@@ -1192,6 +1192,10 @@ video {
   width: 700px;
 }
 
+.w-\[400px\] {
+  width: 400px;
+}
+
 .min-w-\[33rem\] {
   min-width: 33rem;
 }
@@ -1793,15 +1797,9 @@ video {
   font-size: 6rem;
 }
 
-<<<<<<< HEAD
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-=======
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
->>>>>>> 5c8217e241db5f5dd01fe56f196f22b97a3dbb35
 }
 
 .text-\[16px\] {

@@ -1,5 +1,8 @@
 * {
-    transition: .5s;
-    overflow-x: hidden;
+    overflow: hidden;
     /* border: solid 1px white; */
+}
+
+html {
+    overflow-y: scroll;
 }
