@@ -4,7 +4,6 @@ typing.from(".type1",{
 width:0,
 borderRight:"0" ,
 duration:1,    
-// borderRight:'4px solid green',    
 ease:"steps(36)"
 })
 typing.to(".type1",{
