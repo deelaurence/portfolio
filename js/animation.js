@@ -1,105 +1,124 @@
 gsap.registerPlugin(ScrollTrigger);
 let typing = gsap.timeline();
-typing.from(".type1",{
-width:0,
-borderRight:"0" ,
-duration:1,    
-ease:"steps(36)"
+typing.to(".header", {
+  // width: 0,
+  delay: 1,
+  // borderRight: "0",
+  opacity: 1,
+  ease: "steps(36)"
 })
-typing.to(".type1",{
-duration:.1,
-borderRight:"0"    
+typing.from('.type-effect', {
+  duration: 0.7,
+  yPercent: -100,
+  stagger: 0.4,
+  opacity: 0,
+  width: 0,
+  // borderRight: "0",
+  // duration: 1,
+  ease: "steps(36)"
 })
-typing.from(".type2",{
-borderRight:"0" ,
-width:0,
-duration:.5,
-ease:"steps(60)"
+gsap.to('.type-effect', {
+  duration: 0.7,
+  delay: 1,
+  stagger: 0.4,
+  borderRight: "0",
+  duration: 1,
+  // ease: "steps(36)"
 })
-typing.to(".type2",{
-  duration:.1,
-  borderRight:"0"    
+// typing.from(".type1", {
+//   width: 0,
+//   borderRight: "0",
+//   duration: 1,
+//   ease: "steps(36)"
+
+// })
+// typing.to(".type1", {
+//   duration: .1,
+//   borderRight: "0"
+// })
+// typing.from(".type2", {
+//   borderRight: "0",
+//   width: 0,
+//   duration: .5,
+//   ease: "steps(60)"
+// })
+// typing.to(".type2", {
+//   duration: .1,
+//   borderRight: "0"
+// })
+// typing.from(".type3", {
+//   width: 0,
+//   borderRight: "0",
+//   duration: 2,
+//   ease: "steps(36)"
+// })
+// typing.to(".type3", {
+//   duration: .1,
+//   borderRight: "0"
+// })
+
+// typing.from(".type4", {
+//   width: 0,
+//   borderRight: "0",
+//   duration: 1,
+//   ease: "steps(36)"
+// })
+// typing.to(".type4", {
+//   duration: .1,
+//   borderRight: "0"
+// })
+
+// typing.from(".type5", {
+//   width: 0,
+//   borderRight: "0",
+//   duration: 4,
+//   ease: "steps(36)"
+// })
+// typing.to(".type5", {
+//   duration: .1,
+//   borderRight: "0"
+// })
+
+// typing.from(".type6", {
+//   width: 0,
+//   borderRight: "0",
+//   duration: 2,
+//   ease: "steps(36)"
+// })
+// typing.to(".type6", {
+//   duration: .1,
+//   borderRight: "0"
+// })
+
+// typing.from(".type7", {
+//   width: 0,
+//   borderRight: "0",
+//   duration: 5,
+//   ease: "steps(36)"
+// })
+// typing.to(".type7", {
+//   duration: .1,
+//   borderRight: "0"
+// })
+typing.from(".dave", {
+  opacity: 0,
+  yPercent: 50,
+  // scale: 1.1,
+  rotate: '98deg',
+  ease: "Bounce.InOut",
+  duration: 1,
 })
-typing.from(".type3",{
-width:0,
-borderRight:"0" ,
-duration:2,    
-ease:"steps(36)"
-})
-typing.to(".type3",{
-  duration:.1,
-  borderRight:"0"    
+typing.from(".barcode", {
+  opacity: 0
 })
 
-typing.from(".type4",{
-width:0,
-borderRight:"0" ,
-duration:1,    
-ease:"steps(36)"
+typing.from(".npm", {
+  opacity: 0
 })
-typing.to(".type4",{
-  duration:.1,
-  borderRight:"0"    
+typing.from(".scroll-nav", {
+  opacity: 0
 })
 
-typing.from(".type5",{
-width:0,
-borderRight:"0" ,
-duration:4,    
-ease:"steps(36)"
-})
-typing.to(".type5",{
-  duration:.1,
-  borderRight:"0"    
-})
-
-typing.from(".type6",{
-width:0,
-borderRight:"0" ,
-duration:2,    
-ease:"steps(36)"
-})
-typing.to(".type6",{
-  duration:.1,
-  borderRight:"0"    
-})
-
-typing.from(".type7",{
-width:0,
-borderRight:"0" ,
-duration:5,    
-ease:"steps(36)"
-})
-typing.to(".type7",{
-  duration:.1,
-  borderRight:"0"    
-})
-typing.from(".dave",{
-  opacity:0,
-  duration:2,  
-})
-typing.from(".scroll-slowly",{
-  opacity:0  
-})
-typing.from(".issue",{
-  opacity:0  
-})
-typing.from(".scroll-arrow",{
-  display:'none'
-})
-typing.from(".mandarin",{
-  opacity:0  
-})
-typing.from(".barcode",{
-  opacity:0  
-})
-
-typing.from(".npm",{
-  opacity:0  
-})
-typing.from(".scroll-nav",{
-  opacity:0  
-})
 let bigPTL = gsap.timeline({
   scrollTrigger: {
     trigger: ".big-p",
@@ -117,8 +136,8 @@ bigPTL.to(".dave", {
 });
 
 gsap.from(".hello", {
-  opacity:0,
-  yPercent:20,
+  opacity: 0,
+  yPercent: 20,
   // delay:0.5,
   // width:0,
   duration: 1,
@@ -131,8 +150,8 @@ gsap.from(".hello", {
 
 gsap.from(".drop-letter-0", {
   // opacity:0,
-  yPercent:-120,
-  transform:"skewX(45deg)",
+  yPercent: -120,
+  transform: "skewX(45deg)",
   delay: 1.2,
   duration: 1,
   ease: "Bounce.easeOut",
@@ -144,8 +163,8 @@ gsap.from(".drop-letter-0", {
 });
 gsap.from(".drop-letter-D", {
   // opacity:0,
-  yPercent:-120,
-  transform:"skewY(45deg)",
+  yPercent: -120,
+  transform: "skewY(45deg)",
   delay: 1,
   duration: 1,
   ease: "Bounce.easeOut",
@@ -157,8 +176,8 @@ gsap.from(".drop-letter-D", {
 });
 gsap.from(".drop-letter-U", {
   // opacity:0,
-  yPercent:-120,
-  transform:"skewX(45deg)",
+  yPercent: -120,
+  transform: "skewX(45deg)",
   delay: 1.1,
   duration: 1,
   ease: "Bounce.easeOut",
@@ -170,9 +189,9 @@ gsap.from(".drop-letter-U", {
 });
 gsap.from(".drop-letter-N", {
   // opacity:0,
-  yPercent:-120,
-  scale:1.3,
-  transform:"skewY(15deg)",
+  yPercent: -120,
+  scale: 1.3,
+  transform: "skewY(15deg)",
   delay: 1.5,
   duration: 1,
   ease: "Bounce.easeOut",
@@ -184,8 +203,8 @@ gsap.from(".drop-letter-N", {
 });
 gsap.from(".drop-letter-A", {
   // opacity:0,
-  yPercent:-120,
-  transform:"skewX(30deg)",
+  yPercent: -120,
+  transform: "skewX(30deg)",
   delay: 1.1,
   duration: 1,
   ease: "Bounce.easeOut",
@@ -197,8 +216,8 @@ gsap.from(".drop-letter-A", {
 });
 gsap.from(".drop-letter-Y", {
   // opacity:0,
-  yPercent:-120,
-  transform:"skewX(45deg)",
+  yPercent: -120,
+  transform: "skewX(45deg)",
   delay: .8,
   duration: 1,
   ease: "Bounce.easeOut",
@@ -210,8 +229,8 @@ gsap.from(".drop-letter-Y", {
 });
 gsap.from(".drop-letter-O2", {
   // opacity:0,
-  yPercent:-120,
-  transform:"skewX(45deg)",
+  yPercent: -120,
+  transform: "skewX(45deg)",
   delay: .9,
   duration: 1,
   ease: "Bounce.easeOut",
@@ -327,7 +346,7 @@ gsap.from(".intro", {
 });
 gsap.from(".introH3-cont", {
   y: "100%",
-  opacity:0,
+  opacity: 0,
   // width: 0,
   // ease: "steps(18)",
   duration: 1,
@@ -341,18 +360,18 @@ gsap.from(".introH3-cont", {
 gsap.from(".introH3-2", {
   y: "100%",
   duration: 1,
-  delay:.5,
+  delay: .5,
   scrollTrigger: {
     trigger: ".introduction",
     start: "top center",
     end: "top 30%",
   }
-  
+
 });
 gsap.from(".intro-details", {
   opacity: 0,
   duration: 1,
-  delay:1,
+  delay: 1,
   y: "50%",
   scrollTrigger: {
     trigger: ".introduction",
@@ -363,7 +382,7 @@ gsap.from(".intro-details", {
 gsap.from(".explore", {
   opacity: 0,
   duration: 1,
-  delay:2,
+  delay: 2,
   // rotate:-45,
   // scale:3,
   y: "200%",
@@ -394,9 +413,9 @@ gsap.from(".spinner", {
 });
 gsap.from(".services-H3", {
   y: "100%",
-  opacity:0,
+  opacity: 0,
   duration: 1,
-  delay:.5,
+  delay: .5,
   scrollTrigger: {
     trigger: ".services",
     start: "top center",
@@ -405,9 +424,9 @@ gsap.from(".services-H3", {
 });
 gsap.from(".services-p", {
   y: "120%",
-  opacity:0,
+  opacity: 0,
   duration: 1,
-  delay:.5,
+  delay: .5,
   scrollTrigger: {
     trigger: ".services",
     start: "top center",
@@ -417,9 +436,9 @@ gsap.from(".services-p", {
 gsap.from(".services-details", {
   opacity: 0,
   duration: 1.2,
-  delay:1,
-  y:"30%",
-    scrollTrigger: {
+  delay: 1,
+  y: "30%",
+  scrollTrigger: {
     trigger: ".services",
     start: "top center",
     end: "top 30%",
@@ -583,13 +602,13 @@ spatzekTLopen
     scale: 1.3,
     duration: 3,
   })
-.to(".spatzek-ads2", {
+  .to(".spatzek-ads2", {
     opacity: 0,
-    duration:5,
+    duration: 5,
   })
   .to(".spatzek-ads", {
     opacity: 0,
-    duration:5,
+    duration: 5,
   })
 
   .from(".ideal-web-cont", {
@@ -605,7 +624,7 @@ spatzekTLopen
     opacity: 0,
     duration: 5,
   })
-  
+
   .to(".spatzek-ads", {
     opacity: 1,
   })
@@ -615,23 +634,23 @@ spatzekTLopen
   // .to(".spatzek-ads", {
   //   opacity: 0,
   // })
-.from(".tv-text-cont",{
-  opacity:0
- })
-  .from(".tv-text",{
-    yPercent:100,
-    duration:6,
+  .from(".tv-text-cont", {
+    opacity: 0
   })
-  .to(".tv-text",{
-    yPercent:-100,
-    duration:6,
+  .from(".tv-text", {
+    yPercent: 100,
+    duration: 6,
   })
- .to(".tv-text-cont",{
-  opacity:0
- })
- .to(".spatzek-ads2",{
-  opacity:0
- })
+  .to(".tv-text", {
+    yPercent: -100,
+    duration: 6,
+  })
+  .to(".tv-text-cont", {
+    opacity: 0
+  })
+  .to(".spatzek-ads2", {
+    opacity: 0
+  })
   .to(".spatzek", {
     scale: 10,
     opacity: 0,
@@ -639,13 +658,13 @@ spatzekTLopen
     y: "-1000",
     // rotate: "-10deg",
   })
-  // .to(".spatzek", {
-  //   // scale: 10,
-  //   opacity: 0,
-  //   // duration: 30,
-  //   // y: "-1000",
-  //   // rotate: "-10deg",
-  // });
+// .to(".spatzek", {
+//   // scale: 10,
+//   opacity: 0,
+//   // duration: 30,
+//   // y: "-1000",
+//   // rotate: "-10deg",
+// });
 // let spatzekTLclose = gsap.timeline({
 //   scrollTrigger: {
 //     trigger: ".tv-text",
@@ -680,114 +699,114 @@ bridgeTL
     opacity: 0,
   })
 
-  gsap.from(".html", {
-    // opacity: 0,
-    // duration: 2,
-    yPercent: 300,
-    rotate: "-305deg",
-    scrollTrigger: {
+gsap.from(".html", {
+  // opacity: 0,
+  // duration: 2,
+  yPercent: 300,
+  rotate: "-305deg",
+  scrollTrigger: {
     trigger: ".bridge",
     start: "top 50%",
     end: "top 10%",
     scrub: 3,
     // pin: true,
   }
-  })
-  gsap.from(".css", {
-    // opacity: 0,
-    // duration: 2,
-    yPercent: 300,
-    rotate: "-75deg",
-    scrollTrigger: {
+})
+gsap.from(".css", {
+  // opacity: 0,
+  // duration: 2,
+  yPercent: 300,
+  rotate: "-75deg",
+  scrollTrigger: {
     trigger: ".bridge",
     start: "top 50%",
     end: "top 10%",
     scrub: 1,
     // pin: true,
   }
-  })
-  gsap.from(".tailwind", {
-    // opacity: 0,
-    // duration: 2,
-    yPercent: 100,
-    rotate: "-200deg",
-    scrollTrigger: {
+})
+gsap.from(".tailwind", {
+  // opacity: 0,
+  // duration: 2,
+  yPercent: 100,
+  rotate: "-200deg",
+  scrollTrigger: {
     trigger: ".bridge",
     start: "top 50%",
     end: "top 10%",
     scrub: 2,
     // pin: true,
   }
-  })
-  gsap.from(".git", {
-    // opacity: 0,
-    // duration: 2,
-    yPercent: 300,
-    rotate: "155deg",
-    scrollTrigger: {
+})
+gsap.from(".git", {
+  // opacity: 0,
+  // duration: 2,
+  yPercent: 300,
+  rotate: "155deg",
+  scrollTrigger: {
     trigger: ".bridge",
     start: "top 50%",
     end: "top 10%",
     scrub: 5,
     // pin: true,
   }
-  })
-  gsap.from(".nodejs", {
-    // opacity: 0,
-    // duration: 2,
-    yPercent: 200,
-    xPercent: 200,
-    rotate: "550deg",
-    scrollTrigger: {
+})
+gsap.from(".nodejs", {
+  // opacity: 0,
+  // duration: 2,
+  yPercent: 200,
+  xPercent: 200,
+  rotate: "550deg",
+  scrollTrigger: {
     trigger: ".bridge",
     start: "top 50%",
     end: "bottom 10%",
     scrub: 1,
     // pin: true,
   }
-  })
-  gsap.from(".expressjs", {
-    // opacity: 0,
-    // duration: 2,
-    yPercent: 300,
-    xPercent:100,
-    // scale:2,
-    rotate: "55deg",
-    scrollTrigger: {
+})
+gsap.from(".expressjs", {
+  // opacity: 0,
+  // duration: 2,
+  yPercent: 300,
+  xPercent: 100,
+  // scale:2,
+  rotate: "55deg",
+  scrollTrigger: {
     trigger: ".bridge",
     start: "top 50%",
     bottom: "top 10%",
     scrub: 1,
     // pin: true,
   }
-  })
-  gsap.from(".reactjs", {
-    // opacity: 0,
-    // duration: 2,
-    xPercent: -200,
-    rotate: "-155deg",
-    scrollTrigger: {
+})
+gsap.from(".reactjs", {
+  // opacity: 0,
+  // duration: 2,
+  xPercent: -200,
+  rotate: "-155deg",
+  scrollTrigger: {
     trigger: ".reactjs",
     start: "top bottom",
     end: "top 80%",
     scrub: 1,
     // pin: true,
   }
-  })
-  gsap.from(".mongodb", {
-    // opacity: 0,
-    // duration: 2,
-    yPercent: 200,
-    rotate: "55deg", 
-    scrollTrigger: {
+})
+gsap.from(".mongodb", {
+  // opacity: 0,
+  // duration: 2,
+  yPercent: 200,
+  rotate: "55deg",
+  scrollTrigger: {
     trigger: ".reactjs",
     start: "top bottom",
     end: "top 80%",
     scrub: 1,
     // pin: true,
   }
-  })
-  
+})
+
 
 
 gsap.to(".marquee", {
@@ -796,45 +815,45 @@ gsap.to(".marquee", {
   repeat: -1,
   // yoyo:true,
   ease: "none",
-  scrollTrigger:{
-    trigger:".marquee",
-    start:"top bottom"
+  scrollTrigger: {
+    trigger: ".marquee",
+    start: "top bottom"
   }
 });
 gsap.from(".hire-me-direction-header", {
-  yPercent:50 ,
-  opacity:0,
-  duration:1,
+  yPercent: 50,
+  opacity: 0,
+  duration: 1,
   scrollTrigger: {
     trigger: ".hire-me",
     start: "top center",
   },
 });
 gsap.from(".hire-me-direction", {
-  yPercent:50 ,
-  opacity:0,
-  duration:1.5,
-  delay:.5,
+  yPercent: 50,
+  opacity: 0,
+  duration: 1.5,
+  delay: .5,
   scrollTrigger: {
     trigger: ".hire-me",
     start: "top center",
   },
 });
 gsap.from(".hire-me-superpowers-header", {
-  yPercent:50,
-  opacity:0,
-  duration:1,
-  delay:1,
+  yPercent: 50,
+  opacity: 0,
+  duration: 1,
+  delay: 1,
   scrollTrigger: {
     trigger: ".hire-me",
     start: "top center",
   },
 });
 gsap.from(".hire-me-superpowers", {
-  yPercent:50 ,
-  opacity:0,
-  duration:1,
-  delay:1.5,
+  yPercent: 50,
+  opacity: 0,
+  duration: 1,
+  delay: 1.5,
   scrollTrigger: {
     trigger: ".hire-me",
     start: "top center",
@@ -888,7 +907,7 @@ callmeTL.from(".call-me", {
 let gotProjectTL = gsap.timeline({
   scrollTrigger: {
     trigger: ".got-a-project",
-    start: "top 20%", 
+    start: "top 20%",
   },
 });
 gotProjectTL
@@ -898,25 +917,25 @@ gotProjectTL
     duration: 1,
   })
 
-  gsap.from(".estimate-project", {
-    opacity: 0,
-    duration: 1,
-    delay:.5,
-    scrollTrigger: {
+gsap.from(".estimate-project", {
+  opacity: 0,
+  duration: 1,
+  delay: .5,
+  scrollTrigger: {
     trigger: ".got-a-project",
     start: "top 20%",
     // end: "=+100px",
   }
-  })
+})
 
-  gsap.from(".project-form", {
-    yPercent: 20,
-    opacity: 0,
-    delay:.8,
-    duration: 1.5,
-    scrollTrigger: {
+gsap.from(".project-form", {
+  yPercent: 20,
+  opacity: 0,
+  delay: .8,
+  duration: 1.5,
+  scrollTrigger: {
     trigger: ".got-a-project",
     start: "top 20%",
     // end: "=+100px",
   }
-  });
+});
