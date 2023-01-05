@@ -119,22 +119,39 @@ typing.from(".barcode", {
   opacity: 0
 })
 
-typing.from(".npm", {
-  opacity: 0
-})
 typing.to(".typing", {
   opacity: 0
 })
-typing.to(".typing", {
-  opacity: 0
-})
+
 typing.from(".dev", {
   opacity: 0,
-  duration: 2,
+  duration: 1.5,
   yPercent: 20,
   rotate: "6deg",
-  stagger: 0.5,
+  stagger: 0.3,
 })
+let spinImgTl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".spin-container",
+    start: "20% 40%",
+    end: "+=600",
+    scrub: true,
+    // markers: true,
+  }
+})
+
+// spinImgTl.to('.spin-arrow', {
+//   yPercent: -200,
+//   opacity: 1,
+// })
+// spinImgTl.to('.spin-arrow2', {
+//   yPercent: -200,
+//   opacity: 1,
+// })
+// spinImgTl.to('.spin-arrow3', {
+//   yPercent: -200,
+//   opacity: 1,
+// })
 
 let bigPTL = gsap.timeline({
   scrollTrigger: {

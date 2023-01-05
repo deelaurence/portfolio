@@ -521,7 +521,7 @@ body,
   /* top: -35px;
   left: -35px; */
   top: 50px;
-  left: 150px;
+  right: 0;
 }
 
 .spinner-cont2 {
@@ -562,7 +562,11 @@ body,
 }
 
 .spinner-cont>div {
-  height: 100px;
+  height: 90px;
+  font-size: 23px;
+  border-radius: 10px;
+  /* border: 1px solid rgba(255, 255, 255, 0.102); */
+  /* background-color: rgb(170, 170, 170); */
   position: absolute;
   transform-origin: bottom center;
   color: rgba(255, 255, 255, 0.164);
@@ -582,9 +586,24 @@ body,
   width: 120px;
   margin-left: 0;
   position: relative;
-  top: 50%;
-  opacity: 1;
-  transform: translateX(-50%) translateY(-50%);
+  opacity: 0;
+  /* bottom: -200px; */
+}
+
+.spin-arrow2 {
+  width: 120px;
+  margin-left: 0;
+  position: relative;
+  /* bottom: -200px; */
+  opacity: 0;
+}
+
+.spin-arrow3 {
+  width: 120px;
+  bottom: -200px;
+  margin-left: 0;
+  position: relative;
+  opacity: 0;
 }
 
 .what-you-get,
@@ -628,11 +647,11 @@ body,
 }
 
 .spinner-cont {
-  -webkit-animation: rotating 10s linear infinite;
-  -moz-animation: rotating 10s linear infinite;
-  -ms-animation: rotating 10s linear infinite;
-  -o-animation: rotating 10s linear infinite;
-  animation: rotating 10s linear infinite;
+  -webkit-animation: rotating 30s linear infinite;
+  -moz-animation: rotating 30s linear infinite;
+  -ms-animation: rotating 30s linear infinite;
+  -o-animation: rotating 30s linear infinite;
+  animation: rotating 30s linear infinite;
 }
 
 /* .spin-arrow {
