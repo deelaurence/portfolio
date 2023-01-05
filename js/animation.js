@@ -126,7 +126,7 @@ typing.to(".typing", {
 typing.from(".dev", {
   opacity: 0,
   duration: 1.5,
-  yPercent: 20,
+  yPercent: 30,
   rotate: "6deg",
   stagger: 0.3,
 })
