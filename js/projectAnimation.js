@@ -15,12 +15,13 @@ gsap.to(".project-card1", {
 });
 
 gsap.to(".project-img1", {
-    yPercent: 10,
+    yPercent: 15,
+    xPercent: -15,
     rotate: "-3deg",
     scrollTrigger: {
-        trigger: ".project-card1",
-        start: "top 20%",
-        end: "+=200",
+        trigger: ".tools",
+        start: "top 30%",
+        end: "+=300",
         // markers: true,
         scrub: 1,
         // pin: true,
@@ -29,12 +30,13 @@ gsap.to(".project-img1", {
     },
 });
 gsap.to(".project-img2", {
-    yPercent: 20,
+    yPercent: 15,
+    xPercent: -15,
     rotate: "-3deg",
     scrollTrigger: {
         trigger: ".project-card2",
         start: "top 20%",
-        end: "+=200",
+        end: "+=300",
         // markers: true,
         scrub: 1,
         // pin: true,
