@@ -1,4 +1,13 @@
 gsap.registerPlugin(ScrollTrigger);
+gsap.from('.scroll-nav', {
+  opacity: 0,
+  scrollTrigger: {
+    trigger: '.dave',
+    start: "bottom top",
+    end: "+=50px",
+    scrub: true,
+  }
+})
 let typing = gsap.timeline();
 typing.to(".header", {
   // width: 0,
@@ -13,8 +22,6 @@ typing.from('.type-effect', {
   stagger: 0.4,
   opacity: 0,
   width: 0,
-  // borderRight: "0",
-  // duration: 1,
   ease: "steps(36)"
 })
 gsap.to('.type-effect', {
@@ -115,8 +122,18 @@ typing.from(".barcode", {
 typing.from(".npm", {
   opacity: 0
 })
-typing.from(".scroll-nav", {
+typing.to(".typing", {
   opacity: 0
+})
+typing.to(".typing", {
+  opacity: 0
+})
+typing.from(".dev", {
+  opacity: 0,
+  duration: 2,
+  yPercent: 40,
+  rotate: "6deg",
+  stagger: 0.5,
 })
 
 let bigPTL = gsap.timeline({
