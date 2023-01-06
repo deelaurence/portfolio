@@ -135,7 +135,7 @@ let spinImgTl = gsap.timeline({
     trigger: ".spin-container",
     start: "20% 40%",
     end: "+=600",
-    scrub: true,
+    scrub: 1,
     // markers: true,
   }
 })

@@ -131,38 +131,3 @@ grain.forEach((singleGrain) => {
     !isFirefox ? singleGrain.style.display = "block" : singleGrain.style.display = "none"
 })
 
-const spinArrow = document.querySelector('.spin-arrow')
-const spinArrowCont = document.querySelector('.spinner-cont')
-
-images = ['yellowbg.jpeg', 'whitebg.jpg', 'laptopbg.jpg']
-
-// function randomImages(){
-// }
-
-
-
-function manipulateImg() {
-    // ranNum= Math.floor(Math.random()*3)
-    let num = 0
-    let interval;
-    interval = 500
-    spinArrowCont.addEventListener('mouseover', () => {
-        spinArrow.src = `images/Portfolioimg/laptopbg.jpg`
-
-    })
-    spinArrowCont.addEventListener('mouseleave', () => {
-        spinArrow.src = `images/Portfolioimg/whitebg.jpg`
-
-    })
-    //     setInterval(() => {
-    //         num++
-    //         if(num==3){
-    //             num=0
-    //         }
-    //     spinArrow.src=`images/Portfolioimg/${images[num]}`
-    //     console.log(interval)
-    // }, interval);
-    console.log(interval)
-}
-manipulateImg()
-console.log(spinArrowCont)
