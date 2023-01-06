@@ -62,7 +62,6 @@ try {
                 if (stringElement.includes('introducing')) {
                     console.log('intro in view');
                     intro.classList.add('active')
-                    // how.classList.remove('active')
                     projects.classList.remove('active')
                     contact.classList.remove('active')
                 }
@@ -94,7 +93,6 @@ try {
             }
         }
         elementInViewport(introduction)
-        // elementInViewport(workProcess)
         elementInViewport(spatzekCont)
         elementInViewport(call)
     })
