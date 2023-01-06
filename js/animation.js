@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
-gsap.from('.scroll-nav', {
-  opacity: 0,
+gsap.to('.scroll-nav', {
+  opacity: 1,
   scrollTrigger: {
     trigger: '.dave',
     start: "bottom top",
@@ -130,12 +130,28 @@ typing.from(".dev", {
   rotate: "6deg",
   stagger: 0.3,
 })
+gsap.from(".dev2", {
+  opacity: 0,
+  duration: 1.5,
+  yPercent: -30,
+  rotate: "4deg",
+  stagger: 0.3,
+})
+gsap.from(".dev3", {
+  opacity: 0,
+  height: 0,
+  duration: 1.5,
+  yPercent: -10,
+  rotate: "4deg",
+  delay: 2.5
+  // stagger: 0.3,
+})
 let spinImgTl = gsap.timeline({
   scrollTrigger: {
     trigger: ".spin-container",
     start: "20% 40%",
     end: "+=600",
-    scrub: 1,
+    scrub: true,
     // markers: true,
   }
 })
