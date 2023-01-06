@@ -596,6 +596,12 @@ body,
   opacity: 1;
 }
 
+.spin-arrow,
+.spin-arrow2,
+.spin-arrow3 {
+  border-radius: 50px;
+}
+
 .spin-arrow3 {
   width: 50%;
   /* height: 150px; */
