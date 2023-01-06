@@ -140,10 +140,10 @@ let spinImgTl = gsap.timeline({
   }
 })
 
-// spinImgTl.to('.spin-arrow', {
-//   yPercent: -200,
-//   opacity: 1,
-// })
+spinImgTl.to('.spin-arrow-cont', {
+  yPercent: -100,
+  opacity: 1,
+})
 // spinImgTl.to('.spin-arrow2', {
 //   yPercent: -200,
 //   opacity: 1,
