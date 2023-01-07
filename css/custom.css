@@ -565,7 +565,7 @@ body,
   /* background-color: rgb(170, 170, 170); */
   position: absolute;
   transform-origin: bottom center;
-  color: rgba(255, 255, 255);
+  color: rgba(255, 255, 255, .5);
 }
 
 .spinner-cont>div::after {
