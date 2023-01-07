@@ -1,49 +1,60 @@
 try {
 
 
-    document.getElementById("vid0").play()
-    document.getElementById("vid1").play()
-    const timeDOM = document.querySelector(".clock")
-    const intro = document.querySelector(".intro-nav")
+    document.getElementById("vid0").play();
+    document.getElementById("vid1").play();
+    const timeDOM = document.querySelector(".clock");
+    const intro = document.querySelector(".intro-nav");
     // const how = document.querySelector(".how-nav")
-    const projects = document.querySelector(".projects-nav")
-    const contact = document.querySelector(".contact-nav")
+    const projects = document.querySelector(".projects-nav");
+    const contact = document.querySelector(".contact-nav");
     //\\**********************************************************//\\
     //**********************************************************//\\
-    const introduction = document.querySelector(".introducing")
+    const introduction = document.querySelector(".introducing");
     // const workProcess = document.querySelector(".services")
-    const spatzekCont = document.querySelector(".scroll-project")
-    const spatzekCont2 = document.querySelector(".copyright")
-    const call = document.querySelector(".got-a-project")
+    const spatzekCont = document.querySelector(".scroll-project");
+    // const spatzekCont2 = document.querySelector(".copyright")
+    const call = document.querySelector(".got-a-project");
 
 
     const html = document.documentElement;
 
     intro.addEventListener('click', scr)
     function scr() {
-        introduction.scrollIntoView()
+        introduction.scrollIntoView();
     }
-    // how.addEventListener('click',scr3)
-    // function scr3() {
-    //  workProcess.scrollIntoView()
-    // } 
+
     projects.addEventListener('click', scr4)
     function scr4() {
-        spatzekCont.scrollIntoView()
+        spatzekCont.scrollIntoView();
+        let previousPosition = window.pageYOffset || document.documentElement.scrollTop;
+        window.onscroll = function () {
+            let currentPosition = window.pageYOffset || document.documentElement.scrollTop;
+            console.log(previousPosition, currentPosition);
+            if (previousPosition > currentPosition) {
+                setTimeout(() => {
+                    // spatzekCont.scrollIntoView()
+                    window.scrollBy(0, 300)
+                }, 1000);
 
+                console.log('scrolling up');
+                previousPosition = currentPosition;
+                return;
+            }
+
+        }
         setTimeout(() => {
-            window.scrollBy(0, -500)
+            window.scrollBy(0, -500);
         }, 1000);
-        console.log(html.scrollTop)
     }
-    contact.addEventListener('click', scr5)
+    contact.addEventListener('click', scr5);
     function scr5() {
-        call.scrollIntoView()
+        call.scrollIntoView();
 
         setTimeout(() => {
-            window.scrollBy(0, -100)
+            window.scrollBy(0, -100);
         }, 1500);
-        console.log(html.scrollTop)
+        console.log(html.scrollTop);
     }
 
     window.addEventListener("scroll", () => {
@@ -58,43 +69,40 @@ try {
                 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + myElementWidth
                 && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + myElementHeight) {
 
-                let stringElement = JSON.stringify(element.classList)
+                let stringElement = JSON.stringify(element.classList);
                 if (stringElement.includes('introducing')) {
-                    console.log('intro in view');
-                    intro.classList.add('active')
-                    projects.classList.remove('active')
-                    contact.classList.remove('active')
+                    // console.log('intro in view');
+                    intro.classList.add('active');
+                    projects.classList.remove('active');
+                    contact.classList.remove('active');
                 }
-                else if (stringElement.includes('services')) {
-                    console.log('how in view');
-                    intro.classList.remove('active')
-                    // how.classList.add('active')
-                    projects.classList.remove('active')
-                    contact.classList.remove('active')
+                // else if (stringElement.includes('services')) {
+                //     console.log('how in view');
+                //     intro.classList.remove('active')
+                //     projects.classList.remove('active')
+                //     contact.classList.remove('active')
 
-                }
+                // }
                 else if (stringElement.includes('scroll-project')) {
-                    console.log('project in view');
-                    intro.classList.remove('active')
-                    // how.classList.remove('active')
-                    projects.classList.add('active')
-                    contact.classList.remove('active')
+                    // console.log('project in view')
+                    intro.classList.remove('active');
+                    projects.classList.add('active');
+                    contact.classList.remove('active');
                 }
                 else if (stringElement.includes('got-a-project')) {
-                    console.log('contact us in view');
-                    intro.classList.remove('active')
-                    // how.classList.remove('active')
-                    projects.classList.remove('active')
-                    contact.classList.add('active')
+                    // console.log('contact us in view');
+                    intro.classList.remove('active');
+                    projects.classList.remove('active');
+                    contact.classList.add('active');
                 }
             } else {
 
-                console.log('Element is NOT in the viewport!');
+                // console.log('Element is NOT in the viewport!');
             }
         }
-        elementInViewport(introduction)
-        elementInViewport(spatzekCont)
-        elementInViewport(call)
+        elementInViewport(introduction);
+        elementInViewport(spatzekCont);
+        elementInViewport(call);
     })
     const formatTime = () => {
         const currentTime = new Date()
@@ -124,13 +132,13 @@ try {
         formatTime()
     }, 1000);
 
-    const isFirefox = navigator.userAgent.includes("Firefox")
-    console.log(isFirefox)
-    const grain = document.querySelectorAll(".svg")
-    const svg = document.querySelector("svg")
-    grain.forEach((singleGrain) => {
-        !isFirefox ? singleGrain.style.display = "block" : singleGrain.style.display = "none"
-    })
+    // const isFirefox = navigator.userAgent.includes("Firefox")
+    // console.log(isFirefox)
+    // const grain = document.querySelectorAll(".svg")
+    // const svg = document.querySelector("svg")
+    // grain.forEach((singleGrain) => {
+    //     !isFirefox ? singleGrain.style.display = "block" : singleGrain.style.display = "none"
+    // })
 
 
 } catch (error) {
