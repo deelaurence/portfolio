@@ -126,7 +126,7 @@
         <div class="rounded-full h-1 w-1 bg-white"></div>
       </div>
     </nav>
-     <section class="introducing h\sites\deverence\deploys\6337525bcaf7860a13c0b233ero px-[0%] bg-gradient-to-b-[ primarytext-secondaryText, url('/images/Portfolioimg/overlay.jpg')] relative flex flex-col min-h-[200px]  md:flex-row py-6 bg-primaryBg md:justify-between  overflow-hidden"> 
+     <section id="intro-section" class="introducing h\sites\deverence\deploys\6337525bcaf7860a13c0b233ero px-[0%] bg-gradient-to-b-[ primarytext-secondaryText, url('/images/Portfolioimg/overlay.jpg')] relative flex flex-col min-h-[200px]  md:flex-row py-6 bg-primaryBg md:justify-between  overflow-hidden"> 
       <div class="px-[6%]  py-8 z-10 relative overflow-hidden">
         <div class="alo-container w-[fit-content] overflow-hidden" >
           
@@ -166,7 +166,7 @@
         </div>
 
 
-      <div class="alo-underline  bg-orangeBg h-2 w-10 "></div>
+      <div  class="alo-underline  bg-orangeBg h-2 w-10 "></div>
       <div class="text-secondaryText relative flex  gap-4 z-[99] pt-8 social-icons w-1/2">
         <a class="h-[30px] relative z-[99] flex items-end" href=""><img  src="images/Portfolioimg/twitter.png" class="twitter-icon   w-[15px]" alt="Tw"  href="twitter.com" srcset="" /></a>
         <a class="h-[30px] relative z-[99] flex items-end" href=""><img  src="images/Portfolioimg/linkedin.png" class="linkedIn-icon   w-[15px]" alt="Tw"  href="twitter.com" srcset="" /></a>
@@ -357,6 +357,7 @@
           <span
             class="text-[30px] number-3 text-green-400 ml-6 mt-10 font-semibold"
             >03
+            
           </span>
           <span class="code-c">C</span>
           <span class="code-o">o</span>
@@ -367,7 +368,7 @@
       </div> 
 
       <div
-        class="spatzek-cont overflow-hidden -mt-[20vh] h-[150vh] w-[100vw] z-20 mb-[1200px]"
+        id="project-section" class="spatzek-cont overflow-hidden -mt-[20vh] h-[150vh] w-[100vw] z-20 mb-[1200px]"
       >
         <div
           class="relative bg-[url('/images/Portfolioimg/daniel2.jpg')] h-full w-full bg-cover bg-center spatzek"
@@ -393,7 +394,7 @@
             </div>
           </div>
           <div
-            class="spatzek-ads2 z-[-1] bg-[rgb(0,16,29)] absolute h-[11%] w-[23vh] shadow-[0_0_7px_7px_rgb(0,16,29)] pt-4 bottom-[33%] translate-x-[-46.7%] left-[50%]"
+            class="spatzek-ads2 z-[-1]  bg-[rgb(0,16,29)] absolute h-[11%] w-[23vh] shadow-[0_0_7px_7px_rgb(0,16,29)] pt-4 bottom-[33%] translate-x-[-46.7%] left-[50%]"
           >
             <div class="spatzek-ads2-cont w-full h-full">
               <video
@@ -424,7 +425,7 @@
           <!-- <div class="svg -left-1/2 -top-1/2">
 
           </div> -->
-          <div class="ideal-web-cont text-center  px-4 h-full overflow-hidden z-[999] w-full relative">
+          <div  class="ideal-web-cont text-center  px-4 h-full overflow-hidden z-[999] w-full relative">
           
             <div
               class="text-[1rem] pr-4 rounded-tl-[10px] rounded-bl-[10px] what-you-get font-[300] mt-[30vh] spatzek-text opacity-[0.9] text-white relative overflow-hidden"
@@ -505,7 +506,7 @@
             </a>
              -->
             
-            <p class="copyright text-white text-[10px] mt-4">
+            <p  class="copyright text-white text-[10px] mt-4">
               <span>&copy;</span> copyright deverence 2022
             </p>
           </div>
@@ -513,7 +514,7 @@
         <div class="scroll-project" ></div>
       </div>
       <p 
-        class="bridge overflow-hidden font-bold  w-[100vw] text-center  mb-4 text-secondaryText"
+         class=" bridge overflow-hidden font-bold  w-[100vw] text-center  mb-4 text-secondaryText"
       >
         MERN STACK
       </p>
@@ -624,7 +625,8 @@
       </div>
     </section> 
     <section
-      class="contact-me flex relative flex-col bg-secondaryBg pt-8 justify-between overflow-hidden"
+    
+      class="contact-me  flex relative flex-col bg-secondaryBg pt-8 justify-between overflow-hidden"
     >
       
     <!--
@@ -694,7 +696,8 @@
       
     </section>
     <section
-      class="got-a-project overflow-hidden relative px-8 py-8 bg-primaryBg md:flex md:justify-between"
+    
+     id="contact-section" class="got-a-project overflow-hidden relative px-8 py-8 bg-primaryBg md:flex md:justify-between"
     >
       <h3 class="text-white got-project text-2xl font-black">
         Got a project?<br />Let's
@@ -742,7 +745,7 @@
     </section>
 
     <footer
-      class="bg-primaryBg pt-20 flex flex-col items-center justify-center"
+       class="bg-primaryBg pt-20 flex flex-col items-center justify-center"
     >
     <div
         class="text-secondaryText relative text-center overflow-hidden w-[89%] mb-12 mx-auto bg-primaryBg text-[5rem]"
@@ -807,10 +810,10 @@
       </div>
         <div class="fixed opacity-0 scroll-nav top-2 z-[99999999] text-white font-semibold left-1/2 -translate-x-1/2 w-[95.7%] ">
         <li class=" w-[100%] flex flex-row gap-[1px] justify-center">
-          <ul class="h-full intro-nav text-white p-2">INTRO</ul>
+          <a href="#intro-section" class="relative h-full intro-nav text-white p-2"> <div class="intro-nav-strikethrough opacity-0 absolute bottom-[45%] left-0 w-full h-[2px] bg-white"></div> INTRO</a>
           <!-- <ul class="h-full intro-nav bg-white text-primaryBg p-2">ABOUT</ul> -->
-          <ul class="h-full projects-nav  text-white p-2" >PROJECTS</ul>
-          <ul class="p-2 contact-nav  text-white">CONTACT</ul>
+          <a href="#project-section" class="relative h-full projects-nav  text-white p-2" ><div class="projects-nav-strikethrough opacity-0 absolute bottom-[45%] left-0 w-full h-[2px] bg-white"></div> PROJECTS</a>
+          <a href="#contact-section" class="relative p-2 contact-nav  text-white"><div class="contact-nav-strikethrough opacity-0 absolute bottom-[45%] left-0 w-full h-[2px] bg-white"></div>  CONTACT</a>
         </li>
         </div>
 

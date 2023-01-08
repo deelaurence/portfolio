@@ -1,10 +1,52 @@
 try {
   gsap.registerPlugin(ScrollTrigger);
+  gsap.to('.intro-nav-strikethrough', {
+    opacity: 1,
+    scrollTrigger: {
+      trigger: ".introduction",
+      start: "top bottom",
+      scrub: true,
+    }
+  })
+  gsap.to('.intro-nav-strikethrough', {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".spatzek-cont",
+      start: "top bottom",
+      scrub: true,
+    }
+  })
+  gsap.to('.projects-nav-strikethrough', {
+    opacity: 1,
+    scrollTrigger: {
+      trigger: ".spatzek-cont",
+      start: "top bottom",
+      scrub: true,
+    }
+  })
+  gsap.to('.projects-nav-strikethrough', {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".call-me-cont",
+      start: "top bottom",
+      scrub: true,
+    }
+  })
+  gsap.to('.contact-nav-strikethrough', {
+    opacity: 1,
+    scrollTrigger: {
+      trigger: ".call-me-cont",
+      start: "top bottom",
+      scrub: true,
+    }
+  })
+  //
+
   gsap.to('.scroll-nav', {
     opacity: 1,
     scrollTrigger: {
-      trigger: '.dave',
-      start: "bottom top",
+      trigger: '.introduction',
+      start: "top 70%",
       end: "+=50px",
       scrub: true,
     }

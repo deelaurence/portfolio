@@ -791,6 +791,12 @@ body,
   }
 }
 
+.projects-nav,
+.contact-nav,
+.intro-nav {
+  /* text-decoration: 12px line-through; */
+}
+
 .active {
   /* color: white; */
   text-decoration: line-through 2px solid #252734;
