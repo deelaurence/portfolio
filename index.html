@@ -184,20 +184,20 @@
       </div>
       <div class="overflow-hidden introH3-cont">
         <h3 class="overflow-hidden min-w-[400px] introH3 text-primaryText text-3xl font-semibold z-[40]">
-          Full &mdash; Stack Developer,
+          Full &mdash; Stack Developer.
         </h3>
       </div>
-      <div class="overflow-hidden">
+      <!-- <div class="overflow-hidden">
         <h3 class=" h-[45px] width-full overflow-hidden introH3-2  text-orangeBg text-2xl font-[300]" >
           About Me.
         </h3> 
-      </div>
+      </div> -->
       <blockquote class="intro-details text-blockquote overflow-hidden mt-2 text-base z-[40] mb-6">
         Product Designers <span class="italic"> absolutely</span> appreciate how I bring Web design to life and my excellent communication and collaboration skillsets. I love exploring new technologies and like most software developer, I workhard to
         stay on top of latest trends.
       </blockquote>
     <div class="explore mb-24 ">
-    <a href="about.html" target="_blank" class="explore text-orangeBg text-[18px]  font-semibold "
+    <a href="about.html" target="_blank" class="explore text-orangeBg text-[14px]   "
         ><span class=" decoration-orangetext">Explore</span>
         <span class="decoration-orangetext">more</span>
         <img class="text-orangeBg arrow-right inline w-[1.5rem] ml-2" src="images/Portfolioimg/right-arrow.png" alt="">
@@ -235,10 +235,9 @@
         <div class="spinner rotate-[342deg]">o</div>
         <div class="spinner rotate-[360deg]">d</div>
       </div>
-    <div class="spinner-cont2">
+    <!-- <div class="spinner-cont2">
       <div class="spin-arrow-cont flex flex-col">
         <img class="spin-arrow" src="images/Portfolioimg/whitebg.jpg" alt="" srcset="">
-        <!-- <img class="spin-arrow2" src="images/Portfolioimg/chairbrown.jpg" alt="" srcset=""> -->
         <video
                 class="spin-arrow2"
                 autoplay
@@ -253,7 +252,7 @@
               </video>
         <img class="spin-arrow3" src="images/Portfolioimg/manageinco-newspaper.jpg" alt="" srcset="">
       </div>
-    </div>  
+    </div>   -->
       <div
         class="text-[22vw] md:text-[20vw]  px-[6%] mb-[1100px] relative tracking-tight font-black scrub-text test-box opacity-[0.9] text-secondaryText overflow-hidden md:px-[15%]"
       >
@@ -714,25 +713,31 @@
         >
           Estimate your project?<br />Let me know here
         </h5>
-        <form class="project-form relative z-[9999]" action="">
+        <form class="project-form relative z-[9999]" action="https://formsubmit.co/deverenceconnect@gmail.com" method="POST">
           <input
             class="py-5 text-primaryText outline-none bg-transparent w-[100%] border-b-[3px] border-b-blockquote"
             type="text"
             placeholder="what's your name?"
-            name=""
+            name="name"
             id=""
+            required
           />
+          <input type="hidden" name="_next" value="https://deverence.netlify.app/email-sent.html">
           <input
             class="py-5 bg-transparent w-[100%] text-primaryText outline-none border-b-[3px] border-b-blockquote"
             type="email"
             placeholder="what's your email?"
-            name=""
+            name="email"
             id=""
+            required
           />
+          <input type="hidden" name="_captcha" value="false">
           <input
             class="py-5 bg-transparent text-primaryText outline-none border-b-[3px] w-[100%] border-b-blockquote"
             type="text"
+            name="details"
             placeholder="tell me about your project"
+            required
           />
           <br />
           <button
@@ -810,10 +815,12 @@
       </div>
         <div class="fixed opacity-0 scroll-nav top-2 z-[99999999] text-white font-semibold left-1/2 -translate-x-1/2 w-[95.7%] ">
         <li class=" w-[100%] flex flex-row gap-[1px] justify-center">
-          <a href="#intro-section" class="relative h-full intro-nav text-white p-2"> <div class="intro-nav-strikethrough opacity-0 absolute bottom-[45%] left-0 w-full h-[2px] bg-white"></div> INTRO</a>
-          <!-- <ul class="h-full intro-nav bg-white text-primaryBg p-2">ABOUT</ul> -->
-          <a href="#project-section" class="relative h-full projects-nav  text-white p-2" ><div class="projects-nav-strikethrough opacity-0 absolute bottom-[45%] left-0 w-full h-[2px] bg-white"></div> PROJECTS</a>
-          <a href="#contact-section" class="relative p-2 contact-nav  text-white"><div class="contact-nav-strikethrough opacity-0 absolute bottom-[45%] left-0 w-full h-[2px] bg-white"></div>  CONTACT</a>
+          <a href="#intro-section" class="relative h-full intro-nav text-white p-2">
+            <div class="intro-nav-strikethrough opacity-0 absolute  bottom-[47%] rounded-xl left-1/2 -translate-x-1/2 w-[90%] h-[2px] bg-white"></div> INTRO</a>
+          <a href="#project-section" class="relative h-full projects-nav  text-white p-2" >
+            <div class="projects-nav-strikethrough opacity-0 absolute bottom-[47%] rounded-xl left-1/2 -translate-x-1/2 w-[90%] h-[2px] bg-white"></div> PROJECTS</a>
+          <a href="#contact-section" class="relative p-2 contact-nav  text-white">
+            <div class="contact-nav-strikethrough opacity-0 absolute bottom-[47%] rounded-xl left-1/2 -translate-x-1/2 w-[90%] h-[2px] bg-white"></div>  CONTACT</a>
         </li>
         </div>
 
