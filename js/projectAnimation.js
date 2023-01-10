@@ -15,7 +15,7 @@ gsap.to(".project-card1", {
 });
 
 gsap.to(".project-img1", {
-    scale: 1.05,
+    scale: 1.1,
     scrollTrigger: {
         trigger: ".tools",
         start: "top 30%",
@@ -29,7 +29,7 @@ gsap.to(".project-img1", {
 });
 gsap.to(".project-img2", {
     // yPercent: 8,
-    scale: 1.05,
+    scale: 1.1,
     // xPercent: -15,
     // rotate: "-2deg",
     scrollTrigger: {
