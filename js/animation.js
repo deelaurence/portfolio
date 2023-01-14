@@ -75,81 +75,40 @@ try {
     duration: 1,
     // ease: "steps(36)"
   })
-  // typing.from(".type1", {
-  //   width: 0,
-  //   borderRight: "0",
-  //   duration: 1,
-  //   ease: "steps(36)"
+  gsap.to('.grains', {
+    duration: .3,
 
-  // })
-  // typing.to(".type1", {
-  //   duration: .1,
-  //   borderRight: "0"
-  // })
-  // typing.from(".type2", {
-  //   borderRight: "0",
-  //   width: 0,
-  //   duration: .5,
-  //   ease: "steps(60)"
-  // })
-  // typing.to(".type2", {
-  //   duration: .1,
-  //   borderRight: "0"
-  // })
-  // typing.from(".type3", {
-  //   width: 0,
-  //   borderRight: "0",
-  //   duration: 2,
-  //   ease: "steps(36)"
-  // })
-  // typing.to(".type3", {
-  //   duration: .1,
-  //   borderRight: "0"
-  // })
+    // delay: 1,
+    opacity: 1,
+    // stagger: 0.4,
+    scale: 10,
+    xPercent: 100,
+    yPercent: 100,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".grains",
+      start: "top 20%",
+      scrub: true,
+    }
+    // ease: "steps(36)"
+  })
+  gsap.to('.grains-top', {
+    duration: .3,
+    opacity: 1,
+    scale: 20,
+    xPercent: 200,
+    yPercent: 900,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".grains-top",
+      start: "bottom top",
+      end: "+=400px",
+      // pin: true,
+      scrub: true,
+    }
+  })
 
-  // typing.from(".type4", {
-  //   width: 0,
-  //   borderRight: "0",
-  //   duration: 1,
-  //   ease: "steps(36)"
-  // })
-  // typing.to(".type4", {
-  //   duration: .1,
-  //   borderRight: "0"
-  // })
 
-  // typing.from(".type5", {
-  //   width: 0,
-  //   borderRight: "0",
-  //   duration: 4,
-  //   ease: "steps(36)"
-  // })
-  // typing.to(".type5", {
-  //   duration: .1,
-  //   borderRight: "0"
-  // })
-
-  // typing.from(".type6", {
-  //   width: 0,
-  //   borderRight: "0",
-  //   duration: 2,
-  //   ease: "steps(36)"
-  // })
-  // typing.to(".type6", {
-  //   duration: .1,
-  //   borderRight: "0"
-  // })
-
-  // typing.from(".type7", {
-  //   width: 0,
-  //   borderRight: "0",
-  //   duration: 5,
-  //   ease: "steps(36)"
-  // })
-  // typing.to(".type7", {
-  //   duration: .1,
-  //   borderRight: "0"
-  // })
   typing.from(".dave", {
     opacity: 0,
     yPercent: 50,

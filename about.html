@@ -13,40 +13,41 @@
 </head>
 <body class="bg-primaryBg">
     <header class="mt-0 bg-primaryBg  opacity-0  overflow-hidden    relative header md:px-36">       
-    <div class="preloader dev2 p-4 text-blockquote bg-primaryBg flex justify-between overflow-hidden  w-[100vw]  " >
+    <div class="preloader dev2 p-4 text-blockquote bg-primaryBg flex justify-between overflow-hidden" >
       
-      <p class="dev2" >Deverence&trade;</p>
-      <div class="text-[8px] font-semibold h-[140px]">
-        <p class="dev2">SOFTWARE DEVELOPER/ART DIRECTION</p>
+      <p class="dev2 " >Deverence&trade;</p>
+
+      <div class="text-[8px] md:text-[12px] font-semibold h-[140px]">
+        <p class="dev">SOFTWARE DEVELOPER</p>
         <p class="dev2">PORTFOLIO/2022&mdash;2023</p>
         
         <br>
-        <p class="dev2">AVAILABLE FOR FREELANCE</p>
-        <p class="dev2">OPEN SOURCE CONTRIBUTION</p>
+        <p class="clock uppercase text-blockquoteMid">clock</p>
+        <!-- <p class="dev2">OPEN SOURCE CONTRIBUTION</p> -->
         <br>
         <br>
-        <a href="mailto: deverenceconnect@gmail.com" class="dev2 border rounded-[25px] text-[10px] text-center px-3 py-2 ">LET'S TALK</a>
+        <!-- <a href="mailto: deverenceconnect@gmail.com" class="dev2 border rounded-[25px] text-[10px] text-center px-3 py-2 ">LET'S TALK</a> -->
       </div>
     </div>
     <div class="mx-4  relative pb-3 ">
 
       <div class="py-3  uppercase relative top-12">
-        <p class="dev2 border-b-[1px] border-blockquoteMid clock text-[10vw]   text-white" >TO KEEP IT SHORT</p>
+        <p class="dev2 border-b-[1px] border-blockquoteMid  text-[10vw] md:text-[8vw]  text-white" >TO KEEP IT SHORT.</p>
       </div>
       <div class="relative py-3 mt-6 ">
         <p class="dev2 mb-4 mt-4 text-blockquote text-base w-[100%] ">
-        I am fascinated by minimalism, I love girls wearing oversized clothes and nights with bright moonlights. I love dark clouds and the way french words sound. I wish I could write with my left hand. I play the piano, I
-        listen to <span class="italic">jazz</span>  music all the time. My kind of Jazz sounds like <span class="text-white italic play-jazz" >this.</span> Here is my profile on
+        I am fascinated by minimalism and girls wearing oversized clothes. I love nights with bright moonlight so much that sometimes think I might be a crescent alpha🐺. I love dark clouds and the way french words sound. I wish I could write with my left hand. I play the piano and
+        listen to <span  class=" italic">jazz</span>  music all the time. My kind of Jazz sounds like <span class="cursor-pointer italic play-jazz text-orangeText" >this.</span> Here is my profile on
         <a class="text-green-400" href="">spotify.</a></p>
-        <audio  autoplay   class="audio" src="music/emilie portfolio.mp3" type="audio/mp3"></audio>
+        <audio    class="audio" src="music/emilie portfolio.mp3" type="audio/mp3"></audio>
        
         
-        <p class="dev3 mb-14">
+        <p class="dev3 mt-8 mb-14 ">
             <img src="images/Portfolioimg/oleg-ivanov-eSYCRwJEzO8-unsplash.jpg" alt="">
         </p>
       </div>
     </div>  
-    <div class="absolute  bottom-10 right-4 text-white  text-xs">
+    <div class="absolute  bottom-10 right-40 text-white  text-xs">
       <p>&copy; Deverence &mdash; 2022</p>
     </div>
       
@@ -81,7 +82,35 @@
         }
         document.querySelector('.play-jazz').addEventListener('click',playJazz)
         // document.querySelector('.play-jazz').addEventListener('click',playJazz)
-        window.onscroll=playJazz
+        // window.onscroll=playJazz
+        const timeDOM = document.querySelector('.clock')
+        const formatTime = () => {
+        const currentTime = new Date()
+        const hours = currentTime.getHours()
+        const minutes = currentTime.getMinutes()
+        const seconds = currentTime.getSeconds()
+        const day = currentTime.getDay()
+        const weekdays = ["Sn", "Mn", "Tu", "Wd", "Th", "Fr", "St"]
+        // console.log(seconds)
+
+        let newHour;
+        let newSeconds;
+        let newMinute
+        let amPm;
+
+        hours > 12 ? newHour = hours % 12 : newHour = hours
+        hours > 12 ? amPm = "pm" : amPm = "am"
+        seconds < 10 ? newSeconds = `0${seconds}` : newSeconds = seconds
+        minutes < 10 ? newMinute = `0${minutes}` : newMinute = minutes
+        const fullTime = `${weekdays[day]}/${newHour}:${newMinute}:${newSeconds} ${amPm}`
+
+        timeDOM.textContent = fullTime
+    }
+
+    setInterval(() => {
+
+        formatTime()
+    }, 1000);
     </script>
     <script src="js/gsap.min.js"></script>
     <script src="js/CSSRulePlugin.min.js"></script>
@@ -95,6 +124,6 @@
     <script src="js/MotionPathPlugin.min.js"></script>
     <script src="js/PixiPlugin.min.js"></script>
     <script src="js/animation.js"></script>
-    <script src="js/custom.js"></script>
+    <!-- <script src="js/custom.js"></script> -->
 </body>
 </html>
