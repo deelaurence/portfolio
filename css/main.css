@@ -1491,7 +1491,7 @@ video {
 
 .bg-primaryBg {
   --tw-bg-opacity: 1;
-  background-color: rgb(33 33 33 / var(--tw-bg-opacity));
+  background-color: rgb(39 39 39 / var(--tw-bg-opacity));
 }
 
 .bg-secondaryBg {
@@ -1541,7 +1541,7 @@ video {
 }
 
 .to-primaryBg {
-  --tw-gradient-to: #212121;
+  --tw-gradient-to: #272727;
 }
 
 .bg-cover {
@@ -1903,7 +1903,7 @@ video {
 
 .text-primaryBg {
   --tw-text-opacity: 1;
-  color: rgb(33 33 33 / var(--tw-text-opacity));
+  color: rgb(39 39 39 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2065,7 +2065,7 @@ video {
 
   .md\:bg-primaryBg {
     --tw-bg-opacity: 1;
-    background-color: rgb(33 33 33 / var(--tw-bg-opacity));
+    background-color: rgb(39 39 39 / var(--tw-bg-opacity));
   }
 
   .md\:px-36 {

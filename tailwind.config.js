@@ -12,8 +12,9 @@ module.exports = {
     extend: {
       colors: {
         // secondaryBg: "#252734",
-        primaryBg: "#212121",
+        primaryBg: "#272727",
         secondaryBg: "#212121",
+        tertiaryBg: "#323232",
         // primaryBg: "#333647",
         darkBoxBg: "#434657",
         orangeBg: "#ffaf2a",
