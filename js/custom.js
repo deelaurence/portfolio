@@ -140,7 +140,56 @@ try {
     //     !isFirefox ? singleGrain.style.display = "block" : singleGrain.style.display = "none"
     // })
 
+    let change = false;
+    if (change) {
+        let backGrounds = document.getElementsByClassName('bg-primaryBg')
+        let backGrounds2 = document.getElementsByClassName('bg-secondaryBg')
+        let text = document.getElementsByClassName('text-primaryText')
+        let text2 = document.getElementsByClassName('text-secondaryText')
+        let text3 = document.getElementsByClassName('text-blockquote')
+        let text4 = document.getElementsByClassName('text-blockquoteMid')
+        let text5 = document.getElementsByClassName('text-white')
+        console.log(backGrounds[0])
+        console.log(typeof backGrounds)
+        for (let i = 0;
+            i < backGrounds.length;
+            i++) {
+            // backGrounds[i].style.backgroundColor = "#103732"
+            // backGrounds[i].style.backgroundColor = "#7e7e7e"
+            backGrounds[i].style.backgroundColor = "#292929"
+        }
+        for (let i = 0;
+            i < backGrounds2.length;
+            i++) {
+            // backGrounds2[i].style.backgroundColor = "#103732"
+            backGrounds2[i].style.backgroundColor = "#7e7e7e"
+            backGrounds2[i].style.backgroundColor = "#7e7e7e"
+        }
+        // for (let i = 0;
+        //     i < text.length;
+        //     i++) {
+        //     text[i].style.color = "#212121"
+        // }
+        // for (let i = 0;
+        //     i < text2.length;
+        //     i++) {
+        //     text2[i].style.color = "#212121"
+        // }
+        // for (let i = 0;
+        //     i < text3.length;
+        //     i++) {
+        //     text3[i].style.color = "#212121"
+        // }
+        // for (let i = 0;
+        //     i < text4.length;
+        //     i++) {
+        //     text4[i].style.color = "#212121"
+        // }
 
+        // Array.prototype.forEach(backGrounds, (element) => {
+        //     console.log(element);
+        // });
+    }
 } catch (error) {
     console.log(error)
 }

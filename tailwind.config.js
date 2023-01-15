@@ -14,6 +14,8 @@ module.exports = {
         // secondaryBg: "#252734",
         primaryBg: "#272727",
         secondaryBg: "#212121",
+        primaryBg2: "green",
+        secondaryBg2: "green",
         tertiaryBg: "#323232",
         // primaryBg: "#333647",
         darkBoxBg: "#434657",

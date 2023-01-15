@@ -168,7 +168,7 @@ try {
 
   spinImgTl.to('.spin-arrow-cont', {
     yPercent: -100,
-    transform: "skewX(30deg),
+    transform: "skewX(30deg)",
     opacity: 1,
   })
   // spinImgTl.to('.spin-arrow2', {
