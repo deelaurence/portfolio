@@ -11,13 +11,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        // darkestBg: "#252734",
-        secondaryBg: "#252734",
-        // primaryBg: "rgb(21,48,75)",
-        // secondaryBg: "rgb(239,103,63)",
-        primaryBg: "#333647",
-        // secondaryBg: "rgb(257,257,257)",
-        // darkBg: "#333647",
+        // secondaryBg: "#252734",
+        primaryBg: "#212121",
+        secondaryBg: "#212121",
+        // primaryBg: "#333647",
         darkBoxBg: "#434657",
         orangeBg: "#ffaf2a",
         orangeText: "#d7b075",
