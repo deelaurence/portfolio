@@ -68,17 +68,17 @@ try {
     ease: "steps(36)"
   })
   typing.from('.type-effect', {
-    duration: 0.7,
+    duration: 0.5,
     yPercent: -100,
-    stagger: 0.4,
+    stagger: 0.3,
     opacity: 0,
     width: 0,
     ease: "steps(36)"
   })
   gsap.to('.type-effect', {
-    duration: 0.7,
+    duration: 0.5,
     delay: 1,
-    stagger: 0.4,
+    stagger: 0.2,
     borderRight: "0",
     duration: 1,
     // ease: "steps(36)"
@@ -168,6 +168,7 @@ try {
 
   spinImgTl.to('.spin-arrow-cont', {
     yPercent: -100,
+    transform: "skewX(30deg),
     opacity: 1,
   })
   // spinImgTl.to('.spin-arrow2', {
