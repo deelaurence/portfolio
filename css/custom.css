@@ -10,6 +10,14 @@
   /* border: solid 1px white; */
 }
 
+@media (min-height:1100px) {
+
+
+  header {
+    height: 800px !important;
+  }
+}
+
 .for {
   font-style: italic;
 }
@@ -369,7 +377,7 @@ nav {
 
 @media(min-width:768px) {
   .ideal-web {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 }
 

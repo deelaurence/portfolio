@@ -1,5 +1,13 @@
 try {
   gsap.registerPlugin(ScrollTrigger);
+  gsap.to(".dave", {
+    yPercent: 100,
+    scrollTrigger: {
+      trigger: ".marquee",
+      start: "top center",
+      scrub: 1,
+    }
+  })
   gsap.to('.intro-nav-strikethrough', {
     opacity: 1,
     scrollTrigger: {
