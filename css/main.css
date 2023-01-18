@@ -1200,6 +1200,14 @@ video {
   width: 250px;
 }
 
+.w-2\/3 {
+  width: 66.666667%;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
 .min-w-\[400px\] {
   min-width: 400px;
 }
@@ -1408,6 +1416,10 @@ video {
   gap: 1px;
 }
 
+.gap-\[4px\] {
+  gap: 4px;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1460,6 +1472,10 @@ video {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-b-\[1px\] {
   border-bottom-width: 1px;
 }
@@ -1476,6 +1492,10 @@ video {
   border-bottom-width: 3px;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .border-blockquoteMid {
   border-color: rgba(257,257,257,0.5);
 }
@@ -1487,6 +1507,10 @@ video {
 
 .border-b-blockquote {
   border-bottom-color: rgba(257,257,257,0.8);
+}
+
+.border-b-blockquoteMid {
+  border-bottom-color: rgba(257,257,257,0.5);
 }
 
 .bg-primaryBg {
@@ -1520,6 +1544,11 @@ video {
 .bg-\[rgb\(0\2c 16\2c 29\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 16 29 / var(--tw-bg-opacity));
+}
+
+.bg-orangeText {
+  --tw-bg-opacity: 1;
+  background-color: rgb(215 176 117 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/images\/Portfolioimg\/daniel2\.jpg\'\)\] {
@@ -1679,6 +1708,10 @@ video {
   padding-bottom: 3.5rem;
 }
 
+.pb-0 {
+  padding-bottom: 0px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1763,14 +1796,14 @@ video {
   font-size: 12px;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-\[20px\] {
@@ -2106,4 +2139,18 @@ video {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.\[\&\>\*\]\:border>* {
+  border-width: 1px;
+}
+
+.\[\&\>\*\]\:border-black>* {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.\[\&\>\*\]\:bg-orangeText>* {
+  --tw-bg-opacity: 1;
+  background-color: rgb(215 176 117 / var(--tw-bg-opacity));
 }
