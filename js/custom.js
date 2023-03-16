@@ -162,8 +162,8 @@ try {
                 // backGrounds[i].style.backgroundColor = "#103732"
                 // backGrounds[i].style.backgroundColor = "#7e7e7e"
                 // backGrounds[i].style.backgroundColor = "#333647"
-                // backGrounds[i].style.backgroundColor = "#202b25"
-                backGrounds[i].style.backgroundImage = "linear-gradient(to bottom, rgba(32,43,37,.75), rgba(32,43,37,.75)), url('./images/portfolioimg/overlay.jpg')"
+                // backGrounds[i].style.backgroundImage = "linear-gradient(to bottom, rgba(32,43,37,.95), rgba(32,43,37,.95)), url('./images/portfolioimg/grains.jpg')"
+                backGrounds[i].style.backgroundColor = "#202b25"
             }
             for (let i = 0;
                 i < backGrounds2.length;
