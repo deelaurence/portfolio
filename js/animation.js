@@ -844,7 +844,7 @@ try {
   gsap.from(".reactjs", {
     // opacity: 0,
     // duration: 2,
-    xPercent: -200,
+    xPercent: -20,
     rotate: "-155deg",
     scrollTrigger: {
       trigger: ".reactjs",
