@@ -1988,10 +1988,6 @@ video {
     margin-right: 3.5rem;
   }
 
-  .sm\:mt-\[0px\] {
-    margin-top: 0px;
-  }
-
   .sm\:mt-\[-200px\] {
     margin-top: -200px;
   }
@@ -2028,10 +2024,6 @@ video {
 
   .sm\:text-\[8vw\] {
     font-size: 8vw;
-  }
-
-  .sm\:text-\[15vw\] {
-    font-size: 15vw;
   }
 
   .sm\:text-\[10vw\] {
