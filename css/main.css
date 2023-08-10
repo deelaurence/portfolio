@@ -736,6 +736,10 @@ video {
   bottom: 47%;
 }
 
+.top-1\/2 {
+  top: 50%;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -1060,6 +1064,18 @@ video {
   height: 60%;
 }
 
+.h-\[80\%\] {
+  height: 80%;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
 .min-h-\[80vh\] {
   min-height: 80vh;
 }
@@ -1202,6 +1218,14 @@ video {
 
 .w-\[250px\] {
   width: 250px;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .min-w-\[400px\] {
@@ -1525,6 +1549,11 @@ video {
 .bg-neutral-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(212 212 212 / var(--tw-bg-opacity));
+}
+
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/images\/Portfolioimg\/daniel2\.jpg\'\)\] {
@@ -1956,10 +1985,6 @@ video {
 
 .opacity-30 {
   opacity: 0.3;
-}
-
-.mix-blend-difference {
-  mix-blend-mode: difference;
 }
 
 .shadow-\[0_0_7px_7px_rgb\(0\2c 16\2c 29\)\] {

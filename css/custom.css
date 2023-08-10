@@ -179,6 +179,12 @@ html {
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
+.theme {
+  animation: theme 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
 
 .scroll-arrow {
   position: relative;
@@ -229,6 +235,17 @@ html {
 
   to {
     left: 8px;
+    /* width: 2rem; */
+  }
+}
+@keyframes theme {
+  from {
+    right: 4px;
+    /* width: 1.5rem; */
+  }
+
+  to {
+    right: 8px;
     /* width: 2rem; */
   }
 }

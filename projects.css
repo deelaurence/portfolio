@@ -146,3 +146,23 @@ html {
     position: relative;
     z-index: 90;
 }
+
+.theme {
+    animation: theme .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes theme {
+    from {
+        right: 4px;
+        /* width: 1.5rem; */
+    }
+
+    to {
+        right: 8px;
+        /* width: 2rem; */
+    }
+}
